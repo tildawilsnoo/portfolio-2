@@ -1,0 +1,291 @@
+a{
+  text-decoration: none;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+  line-height: normal;
+}
+
+a:hover{
+  color: #000000;
+  text-decoration: none;
+}
+
+ul{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+li{
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: 12px;
+}
+
+.h {
+  margin-bottom: 5px !important;
+}
+.navpanel{
+  width: 20%;
+}
+
+main{
+  width: 80%;
+}
+
+body{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(224, 255, 208);
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  padding-right: 20px;
+}
+
+p{
+  font-family: 'Courier Prime', monospace;
+  font-size: 18px;
+}
+
+.close{
+  margin-bottom: 15px !important;
+}
+
+.description{
+  border: dotted #000000 1px;
+  font-size: 16px;
+  margin-top: 0px;
+  padding-left: 5px;
+}
+
+.description-text{
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.article:hover{
+  text-decoration: underline;
+}
+
+.visible{
+  text-decoration: underline;
+}
+
+.visible:hover{
+  font-weight: bold;
+}
+
+.heading{
+  font-weight: bold;
+}
+
+.two{
+  padding-top: 20px;
+}
+
+.navvy:hover{
+  font-weight: bold;
+}
+
+h1{
+  margin: 20px;
+  font-family: bd-geminis, sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  line-height: normal;
+  font-weight: normal;
+}
+
+.navvy{
+  display: block;
+  margin-left: 20px;
+  font-size: 20px;
+  padding-top: 2px;
+  font-family: 'Courier Prime', monospace;
+}
+
+.clicked{
+  font-weight: bold;
+}
+
+audio{
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(255, 255, 255);
+}
+
+img{
+  width: 400px;
+}
+
+.graphics{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column{
+  flex: 47%;
+  max-width: 47%;
+  padding: 0 4px;
+}
+
+.gallery{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.comic{
+  width: 750px;
+  margin: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.comic-box{
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe{
+  display: block;
+  width: 100%;
+  max-width: 550px;
+}
+
+.frame-container{
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a .heading{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+
+  main{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .two {
+    margin-left: 15px !important;
+  }
+  p {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .description{
+    margin-left: 15px;
+    padding-left: 0px;
+  }
+
+  .comic{
+    width: 95%;
+  }
+
+  .comic-box{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  body{
+    display: block;
+    margin: 20px;
+    padding: 0px;
+  }
+
+  .navpanel{
+    width: 100%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+
+  nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navvy{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .heading{
+    margin-left: 0px;
+  }
+
+  .two{
+    margin-left: 5px !important;
+  }
+
+  nav{
+    display: block;
+  }
+
+  .navvy{
+    padding: 4px;
+    font: 120%;
+    letter-spacing: 2px;
+  }
+  .description{
+    margin-left: 15px;
+    padding-left: 0px;
+  }
+
+  audio{
+    width: 350px;
+  }
+
+  iframe{
+    display: block;
+    width: 300px;
+    height: 170px;
+  }
+
+  .frame-container{
+    width: 300px;
+    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

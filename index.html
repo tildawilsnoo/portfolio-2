@@ -8,6 +8,7 @@
       gtag('js', new Date());
       gtag('config', 'G-191N24XWMS');
     </script>
+    <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial scale=1"/>
     <link rel="icon" href="logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,19 +25,6 @@
       <p>Enter Password</p>
       <input id="pw" type="password">
       <button onclick="check()">Submit</button>
-
-      <script>
-        function check() {
-        const password = "imallowed";
-        const userPw = document.getElementById("pw").value;
-
-        if (userPw === password) {
-        window.location.href = "home.html"; 
-        } else {
-        alert("Incorrect password");
-        }
-        }
-      </script>
     </main>
   </body>
 </html>

@@ -77,7 +77,12 @@ p{
 }
 
 .heading{
-  font-weight: bold;
+  font-family: 'Courier Prime', monospace;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
 .two{
@@ -179,7 +184,61 @@ a .heading{
   margin-left: 0px;
 }
 
+.stories{
+  padding: 0 4px;
+}
+
+.story-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.story{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 16px;
+  background-color: rgb(200, 238, 182);
+  font-family: 'Courier Prime', monospace;
+  transition: background-color 0.15s;
+}
+
+.story:hover{
+  background-color: rgb(180, 226, 160);
+}
+
+.story-meta{
+  font-size: 14px;
+}
+
+.story-title{
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.35;
+  flex-grow: 1;
+}
+
+.story-desc{
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.story-cta{
+  font-size: 14px;
+  align-self: flex-end;
+}
+
+.story:hover .story-cta{
+  font-weight: bold;
+}
+
 @media screen and (max-width: 900px) {
+
+  .story-grid{
+    grid-template-columns: 1fr;
+  }
+
 
   main{
     width: 100%;

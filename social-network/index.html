@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Social Network</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="data.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="info" class="panel">
+    <h1>Who I talked to</h1>
+    <div class="stats" id="stats"></div>
+    <div id="legend"></div>
+  </div>
+  <div id="day-box" class="panel"></div>
+  <div id="controls" class="panel">
+    <button id="play" type="button" title="Play / pause" aria-label="Play or pause">&#10074;&#10074;</button>
+    <button id="prev" type="button" title="Previous day" aria-label="Previous day">&larr;</button>
+    <input id="slider" type="range" min="0" max="0" value="0" aria-label="Day">
+    <button id="next" type="button" title="Next day" aria-label="Next day">&rarr;</button>
+    <span id="date-label"></span>
+  </div>
+  <div id="tooltip"></div>
+  <svg></svg>
+<script src="script.js"></script>
+</body>
+</html>

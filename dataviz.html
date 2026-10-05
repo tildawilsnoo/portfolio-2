@@ -8,10 +8,10 @@
     <link rel="icon" href="logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/cmp7ael.css">
     <meta charset="utf-8"/>
-    <title>Tilda Wilson</title>
+    <title>Tilda Wilson - Data Viz</title>
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
@@ -23,10 +23,27 @@
         <a href="index.html" class="navvy">about</a>
         <a href="dataviz.html" class="clicked navvy">data viz</a>
         <a href="journo.html" class="navvy">journalism</a>
-        <a href="illustration.html" class="navvy">illustration</a>
+        <a href="graphics.html" class="navvy">graphics</a>
       </nav>
     </div>
     <main>
+      <section class="stories">
+        <p class="heading">Projects</p>
+        <div class="story-grid">
+        <a class="story" href="social-network/index.html" target="_blank" rel="noopener">
+          <span class="story-meta">Interactive network diagram — 2026</span>
+          <span class="story-title">Who I talked to</span>
+          <span class="story-desc">For the last 8 months I've been writing down everyone I talk to in a day (in person or over the phone). I turned this into an animated D3 network that plays back those seven months day by day. Each dot is one of 274 people, sized by how often we talked and colored by relationship, with lines connecting people who know each other.</span>
+          <span class="story-cta">explore &rarr;</span>
+        </a>
+        <a class="story" href="https://tildawilsnoo.github.io/node-2/" target="_blank" rel="noopener">
+          <span class="story-meta">Interactive edit viewer — 2026</span>
+          <span class="story-title">Wikipedia Edit Viewer</span>
+          <span class="story-desc">I made this for my visualization studio class, building it around my interest in how Wikipedia articles deal with breaking news. It follows the Boston Marathon bombing article through the first four days after the attack. Each dot on the timeline is one edit; step through them to see what changed, who made the change and why. Green dots mark moments when editors argued over what does and doesn't belong in an encyclopedia.</span>
+          <span class="story-cta">explore &rarr;</span>
+        </a>
+        </div>
+      </section>
     </main>
   </body>
 </html>

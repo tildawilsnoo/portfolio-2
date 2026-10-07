@@ -29,6 +29,18 @@
   box.querySelector('.lightbox-prev').addEventListener('click', function () { show(current - 1); });
   box.querySelector('.lightbox-next').addEventListener('click', function () { show(current + 1); });
   box.addEventListener('click', function (e) { if (e.target === box) close(); });
+
+  // Swipe left/right to move between images on touch screens
+  var touchX = null, touchY = null;
+  box.addEventListener('touchstart', function (e) {
+    touchX = e.touches[0].clientX; touchY = e.touches[0].clientY;
+  }, { passive: true });
+  box.addEventListener('touchend', function (e) {
+    if (touchX === null) return;
+    var dx = e.changedTouches[0].clientX - touchX, dy = e.changedTouches[0].clientY - touchY;
+    touchX = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(current + (dx < 0 ? 1 : -1));
+  });
   document.addEventListener('keydown', function (e) {
     if (box.hidden) return;
     if (e.key === 'Escape') close();

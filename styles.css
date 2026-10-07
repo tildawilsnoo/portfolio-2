@@ -178,7 +178,7 @@ img{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.92);
 }
 
 .lightbox[hidden]{
@@ -287,6 +287,11 @@ a .heading{
 .story-desc{
   font-size: 15px;
   line-height: 1.45;
+  flex-grow: 1;
+}
+
+.story:has(.story-desc) .story-title{
+  flex-grow: 0;
 }
 
 .story-cta{
@@ -377,12 +382,8 @@ a .heading{
 
 @media screen and (max-width: 900px) {
 
-  .cover-grid{
-    grid-template-columns: 1fr;
-  }
-
-  .story-grid{
-    grid-template-columns: 1fr;
+  .nav-break{
+    display: none;
   }
 
 
@@ -396,9 +397,9 @@ a .heading{
     margin-left: 15px !important;
   }
   p {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .description{
@@ -414,11 +415,6 @@ a .heading{
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .column {
-    flex: 100%;
-    max-width: 100%;
   }
 
   body{
@@ -457,6 +453,35 @@ a .heading{
 
   .heading{
     margin-left: 0px;
+  }
+
+  .cover-grid,
+  .story-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .lightbox-img{
+    max-width: 96vw;
+    max-height: 80vh;
+  }
+
+  .lightbox-prev,
+  .lightbox-next{
+    top: auto;
+    bottom: 16px;
+  }
+
+  .lightbox-prev{
+    left: 25%;
+  }
+
+  .lightbox-next{
+    right: 25%;
   }
 
   .two{

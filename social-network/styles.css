@@ -40,8 +40,7 @@ button:disabled { opacity: .3; cursor: default; }
 
 #day-box { top: 16px; right: 16px; padding: .7rem .9rem; font-size: .8rem; width: 14rem; max-height: 35vh; overflow-y: auto; }
 #day-box h2 { font-size: .8rem; margin: 0 0 .4rem; font-weight: 600; }
-#day-box ul { margin: 0; padding: 0; list-style: none; }
-#day-box li { margin-bottom: .25rem; display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; }
+#day-box .dots { display: flex; flex-wrap: wrap; gap: .35rem; }
 #day-box em { color: var(--muted); }
 
 #tooltip { position: absolute; z-index: 20; pointer-events: none; padding: .35rem .55rem; font-size: .78rem;

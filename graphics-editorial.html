@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial scale=1"/>
+    <meta charset="utf-8"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-191N24XWMS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-191N24XWMS');
+    </script>
+    <link rel="icon" href="logo.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/cmp7ael.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Tilda Wilson - Promo + Editorial Graphics</title>
+  </head>
+  <body>
+    <div class="navpanel">
+      <header>
+        <h1><a href="index.html">Tilda Wilson</a></h1>
+      </header>
+      <nav>
+        <a href="index.html" class="navvy">about</a>
+        <a href="dataviz.html" class="navvy">data viz</a>
+        <a href="journo.html" class="navvy">journalism</a>
+        <a href="graphics.html" class="clicked navvy">graphics +<br>comics</a>
+      </nav>
+    </div>
+    <main>
+      <div class="intro">
+        <a class="back" href="graphics.html">&larr; graphics + comics</a>
+        <p class="heading">Promo + Editorial Graphics</p>
+        <p>Posters, promos and article illustrations for the Cornell Daily Sun and Kitsch Magazine.</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img class="gallery" src="graphics/sun-2.jpg" alt="homesick poster" loading="lazy"/>
+          <img class="gallery" src="graphics/sun-4.jpg" alt="corona article" loading="lazy"/>
+          <img class="gallery" src="graphics/sun-5.jpg" alt="streets article" loading="lazy"/>
+          <img class="gallery" src="graphics/re-1.jpg" alt="how to listen graphic" loading="lazy"/>
+          <img class="gallery" src="graphics/hr-4.jpg" alt="harm reduction infographic" loading="lazy"/>
+          <img class="gallery" src="graphics/sun-1.jpg" alt="join the sun" loading="lazy"/>
+          <img class="gallery" src="graphics/sun-8.jpg" alt="2020 comics" loading="lazy"/>
+          <img class="gallery" src="graphics/sun-7.jpg" alt="2020 reviewed article" loading="lazy"/>
+          <img class="gallery" src="graphics/kitsch-7.jpg" alt="art night" loading="lazy"/>
+        </div>
+        <div class="column">
+          <img class="gallery" src="graphics/kitsch-5.jpg" alt="apply to edit kitsch" loading="lazy"/>
+          <img class="gallery" src="graphics/kitsch-6.jpg" alt="third grade graphic" loading="lazy"/>
+          <img class="gallery" src="graphics/kitsch-1.jpg" alt="ideas meeting" loading="lazy"/>
+          <img class="gallery" src="graphics/sun-10.jpg" alt="apple cider science" loading="lazy"/>
+          <img class="gallery" src="graphics/sun-9.jpg" alt="skeletons" loading="lazy"/>
+          <img class="gallery" src="graphics/sun-3.jpg" alt="red zone graphic" loading="lazy"/>
+          <img class="gallery" src="graphics/sun-6.jpg" alt="saturn" loading="lazy"/>
+          <img class="gallery" src="graphics/kitsch-3.jpg" alt="article promo" loading="lazy"/>
+          <img class="gallery" src="graphics/kitsch-2.jpg" alt="art night" loading="lazy"/>
+        </div>
+      </div>
+    </main>
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-btn lightbox-close" type="button" aria-label="Close">&times;</button>
+      <button class="lightbox-btn lightbox-prev" type="button" aria-label="Previous image">&larr;</button>
+      <img class="lightbox-img" alt=""/>
+      <button class="lightbox-btn lightbox-next" type="button" aria-label="Next image">&rarr;</button>
+    </div>
+    <script src="gallery.js"></script>
+  </body>
+</html>

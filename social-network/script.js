@@ -122,7 +122,7 @@
   }
 
   // --- day box --------------------------------------------------------
-  // One row per person you talked to that day (dot + category), not
+  // One dot per person you talked to that day (category on hover), not
   // grouped by interaction.
   var dayBox = document.getElementById('day-box');
   function renderDayBox(date, offset) {
@@ -140,16 +140,14 @@
       var em = document.createElement('em'); em.textContent = 'nothing logged';
       dayBox.appendChild(em); return;
     }
-    var ul = document.createElement('ul');
+    var dots = document.createElement('div'); dots.className = 'dots';
     rels.forEach(function (rel) {
-      var li = document.createElement('li');
       var sw = document.createElement('span'); sw.className = 'swatch';
       sw.style.background = color(rel);
-      li.appendChild(sw);
-      li.appendChild(document.createTextNode(rel));
-      ul.appendChild(li);
+      sw.title = rel;
+      dots.appendChild(sw);
     });
-    dayBox.appendChild(ul);
+    dayBox.appendChild(dots);
   }
 
   // --- render one day -------------------------------------------------

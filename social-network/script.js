@@ -33,7 +33,6 @@
   function toUtcMs(iso) { return Date.parse(iso + 'T00:00:00Z'); }
   function dateAtOffset(o) { return new Date(toUtcMs(minDate) + o * msPerDay).toISOString().slice(0, 10); }
   var totalDays = Math.round((toUtcMs(maxDate) - toUtcMs(minDate)) / msPerDay);
-  var fmt = d3.utcFormat('%b %-d, %Y');
 
   // --- colors + legend (click a category to hide/show it) -------------
   var counts = d3.rollup(nodes, function (v) { return v.length; }, function (d) { return d.relationship; });
@@ -160,7 +159,6 @@
   function render() {
     var offset = +slider.value;
     var date = dateAtOffset(offset);
-    document.getElementById('date-label').textContent = fmt(new Date(toUtcMs(date)));
     prevBtn.disabled = offset <= 0;
     nextBtn.disabled = offset >= totalDays;
     var visible = nodes.filter(function (d) { return d.dates[0] <= date && !hidden.has(d.relationship); });

@@ -294,6 +294,11 @@ a .heading{
   flex-grow: 0;
 }
 
+.story-note{
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .story-cta{
   font-size: 14px;
   align-self: flex-end;
